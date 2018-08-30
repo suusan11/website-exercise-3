@@ -7,7 +7,7 @@ const plumber = require("gulp-plumber");
 
 
 // style.scssの監視タスクを作成する
-// Watchの場合は別タスクに分けてあげて、別途[タスク名]で指定してあげると動くよ
+// Watchの場合は別タスクに分けて、別途[タスク名]で指定する
 // 一度に複数のタスクを実行する場合は ['タスク名', 'タスク名2'] 的な感じで増やせる
 gulp.task('default', ['browserSyncTask'], function () {
     // ★ style.scssファイルを監視
@@ -17,9 +17,6 @@ gulp.task('default', ['browserSyncTask'], function () {
     // [タスク名] を実行する
     gulp.watch('scss/**/*.scss',['scss']);
     gulp.watch('**/*.html', ['html']);
-
-    // gulp.watch("./*.html", ['bs-reload']);
-    // gulp.watch("./scss/*.scss", ['bs-reload']);
 });
 
 gulp.task('scss', function() {
@@ -34,7 +31,8 @@ gulp.task('scss', function() {
         // (これがないと自動的に止まってしまう)
             .on('error', sass.logError))
         // cssフォルダー以下に保存
-        .pipe(gulp.dest('scss'))
+        //.pipe(gulp.dest('scss'))
+        .pipe(gulp.dest('./css'))
         .pipe(browserSync.reload({ stream:true }))
 });
 
@@ -43,7 +41,6 @@ gulp.task("browserSyncTask", function () {
     browserSync.init({
         server: {
             baseDir: "./", // ルートとなるディレクトリを指定
-            //index: "index.html"
         }
     });
 
