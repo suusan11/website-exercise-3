@@ -1,9 +1,10 @@
 {
   "name": "website-exercise-3",
   "version": "1.0.0",
-  "description": "",
+  "description": "exercising html and sass",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
