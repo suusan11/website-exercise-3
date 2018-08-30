@@ -3,38 +3,33 @@
 
 
 // font-family
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
-// @import url('https://fonts.googleapis.com/css?family=Jaldi');
-@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara');
+@import url('https://fonts.googleapis.com/css?family=Montserrahttps://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans|Vollkorn');
 
-// $sans-base: 'Jaldi', sans-serif;
-$sans-base: 'Hind Vadodara', sans-serif;
-$serif-h: 'Crimson Text', serif;
-$sans-header-footer: 'Montserrat', sans-serif;
+$sans-header: 'Open Sans', sans-serif;
+$serif-h1: 'Vollkorn', serif;
+$serif-p: 'Crimson Text', serif;
 
 
 // font-color
-$font-color-base: #707070;
-$font-color-white: #FFFFFF;
+$font-color: #68303F;
 
 // font-size:
 $font-base-size: 16px;
-$font-size-h1: 2.5rem;
-$font-size-p: 1.2rem;
-$font-size-li: 1.4rem; 
+$font-size-h1: 3.125rem;
+$font-size-p: 1.5rem;
+$font-size-li: 1.25rem;
 
 
 //font-weight
-$font-weight-light: lighter;
+$font-weight-bold: bold;
 
 
 html {
-	font-family: $sans-base;
+	font-family: $serif-p;
 	font-size: $font-base-size;
 	line-height: 1.2;
 	font-weight: 400;
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-variant-ligatures: common-ligatures;
-	color: $font-color-base;
+	color: $font-color;
 }
