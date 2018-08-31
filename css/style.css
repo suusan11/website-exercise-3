@@ -72,6 +72,7 @@ body {
   -moz-osx-font-smoothing: auto;
   background-color: #BEB7B8;
   width: 100%;
+  height: 800px;
 }
 
 main {
@@ -98,12 +99,13 @@ html {
 
 .container {
   margin: 0 12%;
+  height: 675px;
 }
 
 .header-nav {
   width: 100%;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .header-nav-ul {
@@ -141,10 +143,5 @@ html {
 }
 
 .footer-nav-ul li {
-  margin: 20%;
-  margin-left: 0;
-}
-
-.footer-nav-ul img {
-  width: 100%;
+  margin-right: 20%;
 }
