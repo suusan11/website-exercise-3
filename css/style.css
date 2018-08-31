@@ -151,3 +151,27 @@ html {
 .footer-nav-ul img {
   width: 50%;
 }
+
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.main__left {
+  width: 50%;
+  display: inline;
+}
+
+.main__left h1 {
+  font-family: "Vollkorn", serif;
+  font-size: 3.125rem;
+  line-height: 200%;
+}
+
+.main__right {
+  width: 50%;
+  display: inline-block;
+}
