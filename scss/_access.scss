@@ -1,0 +1,20 @@
+.access {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $padding-top-section;
+
+  .map {
+    width: 50%;
+  }
+
+  .adress {
+    width: 50%;
+
+    p {
+      font-size: $font-size-p;
+      line-height: $line-height-section-font;
+    }
+  }
+}
