@@ -5,16 +5,17 @@
   text-align: right;
 
   &-ul {
-    width: 23%;
+    width: 25%;
+    height: 100%;
     display: inline-flex;
+    align-items: center;
 
     li {
-      margin-right: 20%;
-      //margin-left: 0;
+      margin-right: 10%;
     }
 
-    //img {
-    //  width: 100%;
-    //}
+    img {
+      width: 50%;
+    }
   }
 }

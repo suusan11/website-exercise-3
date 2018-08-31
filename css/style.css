@@ -138,10 +138,16 @@ html {
 }
 
 .footer-nav-ul {
-  width: 23%;
+  width: 25%;
+  height: 100%;
   display: inline-flex;
+  align-items: center;
 }
 
 .footer-nav-ul li {
-  margin-right: 20%;
+  margin-right: 10%;
+}
+
+.footer-nav-ul img {
+  width: 50%;
 }
