@@ -175,3 +175,48 @@ html {
   width: 50%;
   display: inline-block;
 }
+
+.events {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.events__items {
+  width: 100%;
+}
+
+.events__items-item {
+  width: 45%;
+  display: inline-block;
+  text-align: center;
+  margin: 3% 0;
+}
+
+.events__items-item img {
+  width: 50%;
+}
+
+.access {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.access .map {
+  width: 50%;
+}
+
+.access .adress {
+  width: 50%;
+}
+
+.access .adress p {
+  font-size: 1.5rem;
+  line-height: 200%;
+}
