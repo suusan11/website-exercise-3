@@ -194,10 +194,32 @@ html {
   display: inline-block;
   text-align: center;
   margin: 3% 0;
+  position: relative;
 }
 
 .events__items-item img {
   width: 50%;
+}
+
+.events__items .item--hover {
+  display: none;
+  width: 50%;
+  height: 238.41px;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  background-color: rgba(104, 48, 63, 0.9);
+  text-align: center;
+}
+
+.events__items .item--hover p {
+  line-height: 1200%;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+}
+
+.events__items a:hover + .item--hover {
+  display: inline;
 }
 
 .access {
