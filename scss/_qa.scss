@@ -1,0 +1,24 @@
+.qa {
+  padding-top: $padding-top-section;
+}
+
+.parent li {
+  width: 100%;
+  line-height: 300%;
+  position: relative;
+  border: 2px solid $font-color;
+  border-bottom: none;
+  text-align: center;
+
+  &:last-child li {
+    border-bottom: 2px solid $font-color;
+  }
+
+  & > p {
+    font-size: $font-size-p;
+  }
+}
+
+//.child {
+//  display: none;
+//}
