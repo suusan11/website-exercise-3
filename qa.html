@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo16.png">
     <link rel="shortcut icon" href="images/logo32.png">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>Maple Festival.q&a</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
                 <li>
                     <div class="parent__contents">
                         <p>When is open hour?</p>
-                        <img src="images/down-arrow.png" alt="arrow">
+                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
                     </div>
                     <ul class="child">
                         <li><p>We'll open at 9am - 5pm.</p></li>
@@ -55,7 +56,7 @@
                 <li>
                     <div class="parent__contents">
                         <p>Where can I get the ticket?</p>
-                        <img src="images/down-arrow.png" alt="arrow">
+                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
                     </div>
                     <ul class="child">
                         <li><p>You can buy it online or Canada ticket center.</p></li>
@@ -64,7 +65,7 @@
                 <li>
                     <div class="parent__contents">
                         <p>Should I book for workshop in advance?</p>
-                        <img src="images/down-arrow.png" alt="arrow">
+                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
                     </div>
                     <ul class="child">
                         <li><p>You don't need to book, you can join at that day.</p></li>
@@ -73,7 +74,7 @@
                 <li>
                     <div class="parent__contents">
                         <p>Do you have indoor space?</p>
-                        <img src="images/down-arrow.png" alt="arrow">
+                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
                     </div>
                     <ul class="child">
                         <li><p>We have three indoor space that you can rest.</p></li>
@@ -82,7 +83,7 @@
                 <li>
                     <div class="parent__contents">
                         <p>Do you have parking area?</p>
-                        <img src="images/down-arrow.png" alt="arrow">
+                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
                     </div>
                 </li>
                 <ul class="child">
@@ -101,5 +102,19 @@
             </ul>
         </nav>
     </footer>
+
+    <script type="text/javascript">
+        $(function(){
+            $('.parent__contents--click').click(function() {
+                $(this).toggleClass('active');
+                if($(this).hasClass('active')) {
+                    $('.child').addClass('active');
+                } else {
+                    $('.child').removeClass('active');
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
