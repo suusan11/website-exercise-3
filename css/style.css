@@ -235,7 +235,7 @@ html {
   text-align: center;
 }
 
-.parent li:last-child li {
+.parent li:nth-child(5) {
   border-bottom: 2px solid #68303F;
 }
 
@@ -255,14 +255,30 @@ html {
   right: 2%;
 }
 
+.parent__contents--click.active img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transition: all 0.8s;
+}
+
 .child {
-  display: none;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  transform: translateY(-100%);
+  z-index: 2;
+  transition: all 0.8s;
 }
 
 .child li {
   width: 100%;
   border-bottom: 2px solid #68303F;
+}
+
+.child.active {
+  transform: translateY(0%);
 }
 
 .access {
