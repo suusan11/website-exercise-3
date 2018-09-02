@@ -43,50 +43,51 @@
 
     <div class="container">
         <section class="qa">
-            <ul class="parent">
+            <ul class="qa-lists">
+                    <li>
+                        <div class="question">
+                            <p>When is open hour?</p>
+                            <span></span>
+                        </div>
+                        <ul class="answer">
+                            <li><p>We'll open at 9am - 5pm.</p></li>
+                        </ul>
+                    </li>
+
                 <li>
-                    <div class="parent__contents">
-                        <p>When is open hour?</p>
-                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
-                    </div>
-                    <ul class="child">
-                        <li><p>We'll open at 9am - 5pm.</p></li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="parent__contents">
+                    <div class="question">
                         <p>Where can I get the ticket?</p>
-                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
+                        <span></span>
                     </div>
-                    <ul class="child">
+                    <ul class="answer">
                         <li><p>You can buy it online or Canada ticket center.</p></li>
                     </ul>
                 </li>
                 <li>
-                    <div class="parent__contents">
+                    <div class="question">
                         <p>Should I book for workshop in advance?</p>
-                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
+                        <span></span>
                     </div>
-                    <ul class="child">
+                    <ul class="answer">
                         <li><p>You don't need to book, you can join at that day.</p></li>
                     </ul>
                 </li>
                 <li>
-                    <div class="parent__contents">
+                    <div class="question">
                         <p>Do you have indoor space?</p>
-                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
+                        <span></span>
                     </div>
-                    <ul class="child">
+                    <ul class="answer">
                         <li><p>We have three indoor space that you can rest.</p></li>
                     </ul>
                 </li>
                 <li>
-                    <div class="parent__contents">
+                    <div class="question">
                         <p>Do you have parking area?</p>
-                        <a href="#" class="parent__contents--click"><img src="images/down-arrow.png" alt="arrow"></a>
+                        <span></span>
                     </div>
                 </li>
-                <ul class="child">
+                <ul class="answer">
                     <li><p>We don't have public parking area, so we recommend you for using public transportation.</p></li>
                 </ul>
             </ul>
@@ -104,14 +105,19 @@
     </footer>
 
     <script type="text/javascript">
-        $(function(){
-            $('.parent__contents--click').click(function() {
-                $(this).toggleClass('active');
-                if($(this).hasClass('active')) {
-                    $('.child').addClass('active');
+        $(function() {
+
+            $('.qa-lists li').click(function() {
+                $(this)
+                    .children('.answer').slideToggle();
+
+                if ($(this).children('.question').hasClass('active')) {
+                    $(this).children('.question').removeClass('active');
                 } else {
-                    $('.child').removeClass('active');
+                    $(this).children(".question").addClass("active");
                 }
+
+                return false;
             });
         });
     </script>

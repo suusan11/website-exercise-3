@@ -226,7 +226,7 @@ html {
   padding-top: 5%;
 }
 
-.parent li {
+.qa-lists li {
   width: 100%;
   line-height: 300%;
   position: relative;
@@ -235,50 +235,35 @@ html {
   text-align: center;
 }
 
-.parent li:nth-child(5) {
+.qa-lists li:nth-child(5) {
   border-bottom: 2px solid #68303F;
 }
 
-.parent__contents {
+.question {
   display: inline-block;
 }
 
-.parent__contents p {
+.question p {
   font-size: 1.5rem;
   display: inline-block;
 }
 
-.parent__contents img {
+.question span {
   width: 30px;
   position: absolute;
   top: 20%;
   right: 2%;
+  color: #000;
 }
 
-.parent__contents--click.active img {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  transition: all 0.8s;
-}
-
-.child {
-  position: fixed;
-  top: 0;
-  right: 0;
+.answer {
+  display: none;
   width: 100%;
-  transform: translateY(-100%);
-  z-index: 2;
-  transition: all 0.8s;
 }
 
-.child li {
+.answer li {
   width: 100%;
   border-bottom: 2px solid #68303F;
-}
-
-.child.active {
-  transform: translateY(0%);
 }
 
 .access {
