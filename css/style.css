@@ -241,6 +241,8 @@ html {
 
 .question {
   display: inline-block;
+  position: relative;
+  width: 100%;
 }
 
 .question p {
@@ -249,11 +251,37 @@ html {
 }
 
 .question span {
-  width: 30px;
+  display: block;
   position: absolute;
-  top: 20%;
+  top: 0;
+  bottom: 0;
   right: 2%;
-  color: #000;
+  width: 15px;
+  height: 3px;
+  margin: auto;
+  background: #68303F;
+  content: "";
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.question span::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 3px;
+  height: 15px;
+  margin: auto;
+  background: #68303F;
+  content: "";
+}
+
+.active span {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .answer {
@@ -263,7 +291,11 @@ html {
 
 .answer li {
   width: 100%;
-  border-bottom: 2px solid #68303F;
+  border: 0;
+  border-top: 2px solid #68303F;
+  font-size: 1.25rem;
+  background-color: #9E838B;
+  color: #FFFFFF;
 }
 
 .access {
