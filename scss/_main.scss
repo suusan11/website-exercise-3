@@ -7,17 +7,25 @@
 
   &__left {
     width: 50%;
-    display: inline;
+    display: inline-block;
+
+    @include tab {
+      width: 80%;
+    };
 
     h1 {
       font-family: $serif-h1;
       font-size: $font-size-h1;
+      color: $font-color-h1;
       line-height: $line-height-section-font;
     }
   }
 
   &__right {
     width: 50%;
-    display: inline-block;
+
+    @include sp {
+      width: 80%;
+    };
   }
 }
