@@ -1,17 +1,15 @@
-.footer-nav {
+footer {
   width: 100%;
   height: 70px;
   background-color: $background-color-footer;
-  text-align: right;
 
-  &-ul {
-    width: 25%;
-    height: 100%;
-    display: inline-flex;
-    align-items: center;
+  .icons {
+    width: 100%;
+    padding-top: 15px;
+    text-align: right;
 
-    li {
-      margin-right: 15%;
+    a {
+      margin-right: 60px;
     }
 
     img {
