@@ -438,6 +438,7 @@ footer .icons img {
     transform: rotate(45deg);
   }
   .global-menu {
+    display: inline-block;
     position: fixed;
     top: 0;
     left: 0;
@@ -448,6 +449,16 @@ footer .icons img {
     text-align: center;
     background: #9E838B;
     transition: all 0.8s;
+  }
+  .global-menu .nav-li {
+    width: 100%;
+    padding: 20px;
+  }
+  .global-menu .nav-li a {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    color: #68303F;
   }
   .global-menu.active {
     transform: translateY(0%);

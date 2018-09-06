@@ -70,6 +70,7 @@
   }
 
   .global-menu {
+    display: inline-block;
     position: fixed;
     top: 0;
     left: 0;
@@ -81,23 +82,21 @@
     background: $background-color-footer;
     transition: all 0.8s;
 
-    //.nav-li {
-    //  width: 100%;
-    //  padding: 20px;
-    //
-    //  a {
-    //    display: inline-block;
-    //    font-size: 1rem;
-    //    color: $font-color;
-    //
-    //    &:hover {
-    //      font-weight: bold;
-    //    }
-    //  }
-    //}
+    .nav-li {
+      width: 100%;
+      padding: 20px;
+
+      a {
+        display: inline-block;
+        font-size: 1rem;
+        font-family: $sans-header;
+        color: $font-color;
+      }
+    }
 
     &.active {
       transform: translateY(0%);
     }
   }
+
 }
