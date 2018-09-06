@@ -3,6 +3,10 @@
   text-align: center;
   margin-top: 2%;
 
+  @include tab {
+    margin-top: 5%;
+  }
+
   &-ul {
     width: 50%;
     display: inline-flex;

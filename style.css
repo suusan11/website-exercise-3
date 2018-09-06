@@ -110,6 +110,12 @@ html {
   margin-top: 2%;
 }
 
+@media (max-width: 800px) {
+  .header-nav {
+    margin-top: 5%;
+  }
+}
+
 .header-nav-ul {
   width: 50%;
   display: inline-flex;
