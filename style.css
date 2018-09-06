@@ -357,3 +357,78 @@ footer .icons img {
   font-size: 1.5rem;
   line-height: 200%;
 }
+
+.hamburger, .global-menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .header-nav {
+    display: none;
+  }
+  .hamburger {
+    position: fixed;
+    right: 5%;
+    top: 2%;
+    display: block;
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .hamburger span {
+    display: block;
+    position: absolute;
+    width: 70%;
+    border-bottom: solid 3px rgba(104, 48, 63, 0.9);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    padding-top: 5px;
+    right: 7px;
+  }
+  .hamburger span:nth-child(1) {
+    top: 3px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 13px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 23px;
+  }
+  .hamburger span:nth-child(4) {
+    border: none;
+    top: 28px;
+    left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .hamburger.active span:nth-child(1) {
+    top: 15px;
+    left: 4px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .hamburger.active span:nth-child(2), .hamburger.active span:nth-child(3) {
+    top: 15px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .global-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    z-index: 2;
+    padding-top: 50px;
+    text-align: center;
+    background: #9E838B;
+    transition: all 0.8s;
+  }
+  .global-menu.active {
+    transform: translateY(0%);
+  }
+}
