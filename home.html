@@ -78,5 +78,18 @@
            <a href="#"><img src="images/instagram.png" alt="instagram"></a>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        $(function(){
+            $('.hamburger').click(function() {
+                $(this).toggleClass('active');
+                if($(this).hasClass('active')) {
+                    $('.global-menu').addClass('active');
+                } else {
+                    $('.global-menu').removeClass('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
