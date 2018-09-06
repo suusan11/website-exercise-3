@@ -4,4 +4,8 @@
   margin: 0 auto;
   padding-left: 12%;
   padding-right: 12%;
+
+  @include sp {
+    min-height: 620px;
+  }
 }
