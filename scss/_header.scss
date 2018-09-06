@@ -4,7 +4,7 @@
   margin-top: 2%;
 
   &-ul {
-    width: 40%;
+    width: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,7 @@
   &-li {
     display: inline-block;
     width: 30%;
+    margin: 0 10%;
 
     img {
       width: 40px;
@@ -22,7 +23,6 @@
       color: $font-color;
       font-size: $font-size-li;
       font-family: $sans-header;
-
     }
   }
 }

@@ -111,7 +111,7 @@ html {
 }
 
 .header-nav-ul {
-  width: 40%;
+  width: 50%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -120,6 +120,7 @@ html {
 .header-nav-li {
   display: inline-block;
   width: 30%;
+  margin: 0 10%;
 }
 
 .header-nav-li img {
