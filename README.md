@@ -5,7 +5,7 @@ URL: <https://suusan11.github.io/website-exercise-3/>
 
 I made 4 html files.
 
-1. Home
+1.Home
 ![top](https://user-images.githubusercontent.com/38636923/45231270-58ca2180-b280-11e8-943b-ff57bdf199d4.png)
 
 2.Event
