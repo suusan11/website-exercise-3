@@ -165,6 +165,12 @@ footer .icons {
   }
 }
 
+@media (max-width: 480px) {
+  footer .icons {
+    padding-top: 20px;
+  }
+}
+
 footer .icons a {
   text-align: center;
   margin-right: 5%;
@@ -178,6 +184,12 @@ footer .icons a {
 
 footer .icons img {
   width: 60%;
+}
+
+@media (max-width: 480px) {
+  footer .icons img {
+    width: 40%;
+  }
 }
 
 .main {
