@@ -8,9 +8,9 @@
   padding-top: 5%;
 
   @include tab {
-    display: block;
     width: 100%;
     margin-top: 20%;
+    flex-direction: column;
   }
 
   &__item {
@@ -18,7 +18,6 @@
     width: 45%;
 
     @include tab {
-      display: block;
       width: 100%;
     }
 
