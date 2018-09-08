@@ -124,9 +124,10 @@ html {
 
 .header-nav-ul {
   width: 50%;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .header-nav-li {
@@ -197,6 +198,7 @@ footer .icons img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   text-align: center;
   position: relative;
   padding-top: 5%;
@@ -204,9 +206,7 @@ footer .icons img {
 
 @media (max-width: 800px) {
   .main {
-    width: 100%;
     margin-top: 20%;
-    flex-direction: column;
   }
 }
 
