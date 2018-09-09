@@ -82,7 +82,7 @@
 
     <script type="text/javascript">
         $(function(){
-            $('.hamburger').click(function() {
+            $('.hamburger').on('click', function() {
                 $(this).toggleClass('active');
                 if($(this).hasClass('active')) {
                     $('.global-menu').addClass('active');
