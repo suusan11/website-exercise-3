@@ -272,7 +272,7 @@ footer .icons img {
 }
 
 .events__items .item--hover {
-  display: none;
+  opacity: 0;
   width: 50%;
   height: 238.41px;
   position: absolute;
@@ -280,6 +280,7 @@ footer .icons img {
   left: 25%;
   background-color: rgba(104, 48, 63, 0.9);
   text-align: center;
+  transition: opacity .5s ease-out;
 }
 
 .events__items .item--hover p {
@@ -289,7 +290,7 @@ footer .icons img {
 }
 
 .events__items a:hover .item--hover {
-  display: inline;
+  opacity: 1;
 }
 
 .qa {

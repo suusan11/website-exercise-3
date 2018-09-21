@@ -22,7 +22,7 @@
     }
 
     .item--hover {
-        display: none;
+        opacity: 0;
         width: 50%;
         height: 238.41px;
         position: absolute;
@@ -30,6 +30,7 @@
         left: 25%;
         background-color: $background-color-hover;
         text-align: center;
+        transition: opacity .5s ease-out;
 
       p {
         line-height: 1200%;
@@ -39,7 +40,7 @@
     }
 
     a:hover .item--hover {
-      display: inline;
+      opacity: 1;
     }
   }
 }
